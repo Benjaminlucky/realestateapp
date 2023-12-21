@@ -37,7 +37,7 @@ export default function Signup() {
       }
       setLoading(false);
       setError(null);
-      navigate('/sign-in');
+      navigate('/signin');
     } catch (error) {
       setLoading(false);
       setError(error.message);
@@ -59,7 +59,7 @@ export default function Signup() {
       </form>
       <div className="flex gap-2 mt-5">
         <p>Have an account?</p>
-        <Link to={"/signin-in"}>
+        <Link to={"/signin"}>
           <span className='text-blue-700'>Sign in</span>
         </Link>
       </div>
